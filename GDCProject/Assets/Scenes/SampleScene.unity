@@ -262,25 +262,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee13c2d1ee1bd1408c97eb954cc7810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug: 0
+  debug:
+    log: 0
+    inspector: 0
+    nothing: 0
   tracks:
   - trackName: Soundtracks
-    volume: 5
-    mute: 0
     soundtracks: 1
+    volume: 0
+    mute: 0
     source: {fileID: 0}
     secondSource: {fileID: 0}
     secondSourceActive: 0
     audio:
-    - nickname: Test Song One
+    - nickname: Never gonna
       name: 0
+      intro: {fileID: 0}
+      clip: {fileID: 8300000, guid: 5458c79cd55c0c642a5f329a57fc1296, type: 3}
+    - nickname: Give You
+      name: 1
+      intro: {fileID: 0}
+      clip: {fileID: 8300000, guid: 7275911b6e41d564a88d5cd71e386f20, type: 3}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: Up
+      name: 2
       intro: {fileID: 0}
       clip: {fileID: 0}
   - trackName: UI SFX
-    volume: 5
-    mute: 0
     soundtracks: 0
+    volume: 0
+    mute: 0
     source: {fileID: 0}
     secondSource: {fileID: 0}
     secondSourceActive: 0
-    audio: []
+    audio:
+    - nickname: Pew pew
+      name: 5
+      intro: {fileID: 0}
+      clip: {fileID: 0}
+    - nickname: insert noise
+      name: 6
+      intro: {fileID: 0}
+      clip: {fileID: 0}
