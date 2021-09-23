@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    public double secondsPerInGameMinute = 1.0f; //placeholder, set in inspector
-    private double timeSinceLastMinute;
+    public float secondsPerInGameMinute = 1.0f; //placeholder, set in inspector
+    private float timeSinceLastMinute;
     private DateTime dayStart = new DateTime(0, 6, 0); //inclusive
     private DateTime dayEnd = new DateTime(0, 22, 0); //exclusive
     public DateTime currentTime {
@@ -27,10 +27,10 @@ public class TimeManager : MonoBehaviour
     {
         if (!timerPaused) {
             timeSinceLastMinute += Time.deltaTime;
-            while (timeSinceLastMinute > secondsPerInGameMinute) {
-                timeSinceLastMinute -= secondsPerInGameMinute;
-                currentTime.minute++;
-                // Debug.Log(currentTime.ToString() + " " + IsDay());
+            if (timeSinceLastMinute > secondsPerInGameMinute) {
+                int addedMinutes = (int) (timeSinceLastMinute / secondsPerInGameMinute);
+                timeSinceLastMinute = timeSinceLastMinute % secondsPerInGameMinute;
+                currentTime.minute += addedMinutes;
             }
         }
     }
@@ -38,7 +38,7 @@ public class TimeManager : MonoBehaviour
         currentTime = new DateTime(0, 0, 0); //initialize time from json later
     }
     public static TimeManager GetTimeManager() {
-        return GameObject.FindObjectOfType<TimeManager>();
+        return FindObjectOfType<TimeManager>();
     }
     public bool IsDay() {
         DateTime time = currentTime.TimeOnly();
