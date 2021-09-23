@@ -265,7 +265,6 @@ MonoBehaviour:
   debug:
     log: 0
     inspector: 0
-    nothing: 0
   tracks:
   - trackName: Soundtracks
     soundtracks: 1
@@ -287,34 +286,8 @@ MonoBehaviour:
       name: 2
       intro: {fileID: 0}
       clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
-    - nickname: Up
-      name: 2
-      intro: {fileID: 0}
-      clip: {fileID: 0}
+    currentAudio: 0
+    currentSecondAudio: 0
   - trackName: UI SFX
     soundtracks: 0
     volume: 0
@@ -331,3 +304,5 @@ MonoBehaviour:
       name: 6
       intro: {fileID: 0}
       clip: {fileID: 0}
+    currentAudio: 0
+    currentSecondAudio: 0

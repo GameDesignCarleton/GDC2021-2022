@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestAudio : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class TestAudio : MonoBehaviour {
+    private void Update() {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+        if (Input.GetKeyUp(KeyCode.G)) {
+            AudioManager.instance.PlayAudio(AudioName.ST_001, true);
+        }
+        if (Input.GetKeyUp(KeyCode.H)) {
+            AudioManager.instance.PlayAudio(AudioName.ST_002, true);
+        }
+        if (Input.GetKeyUp(KeyCode.I)) {
+            AudioManager.instance.PlayAudio(AudioName.ST_003, true);
+        }
+
+
     }
 }
