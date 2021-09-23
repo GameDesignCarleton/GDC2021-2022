@@ -46,7 +46,7 @@ public class DateTime
     }
 
     public static DateTime operator -(DateTime a, DateTime b) {
-        return new DateTime(a.day+b.day, a.hour+b.hour, a.minute+b.minute);
+        return new DateTime(a.day-b.day, a.hour-b.hour, a.minute-b.minute);
     }
 
     public static bool operator >(DateTime a, DateTime b) {
